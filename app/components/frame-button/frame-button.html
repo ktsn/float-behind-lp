@@ -1,0 +1,7 @@
+<div :class="['frame-button', theme, disabled ? 'disabled' : '']">
+  <i v-if="icon" class="frame-button-icon">
+    <component :is="icon + '-icon'" width="28" height="28"></component>
+  </i>
+
+  <span class="frame-button-label" v-text="label"></span>
+</div>

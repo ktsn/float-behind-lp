@@ -1,0 +1,150 @@
+@charset 'utf-8';
+
+body {
+  background-color: #fff;
+}
+
+/*---------------------------------------
+    Header
+----------------------------------------*/
+$header-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+
+.top-header {
+  position: relative;
+  height: 625px;
+  background: url(/images/bg-jumbotron.png) center center / cover no-repeat;
+}
+
+.top-logo {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+.top-lead {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  text-shadow: $header-shadow;
+  transform: translate(-50%, -50%);
+}
+
+.top-buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 55px;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.top-button {
+  display: inline-block;
+
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+
+/*---------------------------------------
+    Feature
+----------------------------------------*/
+.top-feature {
+  padding: 45px 0;
+  background-color: #f2f2f2;
+}
+
+.top-feature-list {
+  display: flex;
+  justify-content: center;
+}
+
+.top-feature-item {
+  margin: 0 10px;
+  font-size: 1.34rem;
+  text-align: center;
+}
+
+.top-feature-description {
+  margin: 35px 10px 0;
+  font-size: 1.17rem;
+  text-align: center;
+}
+
+/*---------------------------------------
+    Others
+----------------------------------------*/
+.top-row {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 90px 10px;
+  max-width: 768px;
+}
+
+.top-team {
+  background-color: #f2f2f2;
+}
+
+.top-download {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: #dedede;
+}
+
+.top-download-heading {
+  font-size: 2.33rem;
+  text-align: center;
+}
+
+.top-download-buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.top-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #3F2E5C;
+  color: #fff;
+  font-size: 1.17rem;
+  text-align: center;
+}
+
+/*  Row
+----------------------------------------*/
+.row-description {
+  order: 2;
+  padding-left: 50px;
+  line-height: 1.5;
+
+  .top-row:nth-child(even) &,
+  .top-row.inverse:nth-child(odd) & {
+    order: 1;
+    padding-left: 0;
+    padding-right: 50px;
+  }
+}
+
+.row-image {
+  order: 1;
+
+  .top-row:nth-child(even) &,
+  .top-row.inverse:nth-child(odd) & {
+    order: 2;
+  }
+}
+
+.row-heading {
+  margin-top: 25px;
+  font-size: 1.66rem;
+}
+
+.row-body {
+  margin-top: 20px;
+  font-size: 1.17rem;
+}
