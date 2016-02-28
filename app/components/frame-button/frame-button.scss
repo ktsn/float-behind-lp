@@ -25,12 +25,8 @@
   vertical-align: middle;
 
   svg {
-    fill: #fff;
+    fill: currentColor;
     transition: 300ms ease-out;
-
-    .frame-button:hover:not(.disabled) & {
-      fill: #000;
-    }
   }
 }
 
@@ -51,16 +47,8 @@ $purple: #3f2e5c;
     cursor: default;
   }
 
-  .frame-button-icon svg {
-    fill: $purple;
-  }
-
   &:hover:not(.disabled) {
     color: #fff;
     background-color: $purple;
-
-    .frame-button-icon svg {
-      fill: #fff;
-    }
   }
 }
