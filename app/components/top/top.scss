@@ -17,8 +17,10 @@ $header-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 
 .top-logo {
   position: absolute;
-  top: 25px;
-  left: 15px;
+  top: 30px;
+  left: 50px;
+  color: #fff;
+  filter: drop-shadow($header-shadow);
 }
 
 .top-lead {
@@ -43,6 +45,7 @@ $header-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 
 .top-button {
   display: inline-block;
+  filter: drop-shadow($header-shadow);
 
   &:not(:first-child) {
     margin-left: 20px;
